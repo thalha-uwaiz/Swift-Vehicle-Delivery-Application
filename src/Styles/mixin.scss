@@ -1,0 +1,80 @@
+@mixin flexCol($align: center, $justify: center, $gap: 0) {
+    display: flex;
+    flex-direction: column;
+    align-items: $align;
+    justify-content: $justify;
+    gap: #{$gap}px;
+}
+
+
+@mixin flexRow($align: center, $justify: center, $gap: 0) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    gap: #{$gap}px;
+}
+
+
+@mixin buttun1() {
+    background-color: $primaryColor;
+    border: none;
+    padding: 15px 100px 15px 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+@mixin button2() {
+    color: $primaryColor;
+    background: transparent;
+    border: 1px solid;
+    border-color: $primaryColor;
+    padding: 15px 140px 15px 140px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@mixin input() {
+    width: 400px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #d0cdcd;
+}
+
+@mixin heading() {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: sans-serif;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@mixin subHeading() {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #A0A0A0;
+    margin-bottom: 40px;
+}
+
+@mixin hover() {
+    background-color: rgb(83, 176, 118);
+    border: 1px solid var(--color-steelblue-100);
+    box-sizing: border-box;
+    cursor: grab
+}
+
+@mixin hoverWhite(){
+    background-color: #daede1;
+    box-sizing: border-box;
+    cursor: grab
+}

@@ -1,0 +1,67 @@
+@import '../../Styles/Global.scss';
+@import '../../Styles/mixin.scss';
+
+.Welcomepage {
+    @include flexRow(left, left, 0);
+
+    .Left {
+        .ScreenPic {
+            width: 833px;
+            position: relative;
+            max-height: 100%;
+            overflow: hidden;
+            flex-shrink: 0;
+            object-fit: cover;
+            max-width: 100%;
+        }
+
+    }
+
+    .Right {
+        @include flexCol();
+        padding-left: 180px;
+
+        .Heading {
+            @include heading;
+
+
+        }
+
+        .HaveABetter {
+            font-size: 20px;
+            font-family: sans-serif;
+            color: #A0A0A0;
+            margin-bottom: 40px;
+        }
+
+        .Buttons {
+            @include flexCol();
+            .CreateAnAcc{
+                @include buttun1;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+            .CreateAnAcc:hover {
+               @include hover;
+            }
+
+            .Login{
+                @include button2;
+
+                
+                
+            }
+            .Login:hover{
+                @include hoverWhite;
+            }
+        }
+
+        .footer{
+            margin-top: 300px;
+            color: #7d7a7a;
+            font-family: sans-serif;
+            font-style: italic;
+        }
+    }
+
+}

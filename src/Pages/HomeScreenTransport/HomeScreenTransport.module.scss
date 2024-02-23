@@ -1,0 +1,80 @@
+@import '../../Styles/Global.scss';
+@import '../../Styles/mixin.scss';
+
+.HomeScreenTransport {
+
+
+    .body {
+        background-image: url('../../Assets/MapBackground.png');
+       height: 680px;
+    
+        @include flexCol(flex-start, flex-start, 0);
+
+        .Rental {
+            .rentalBtn {
+                @include buttun1();
+                margin-top: 15px
+            }
+
+            .rentalBtn:hover {
+                @include hover();
+            }
+        }
+
+        .searchContainer {
+            width: 100%;
+            height: 75px;
+            background-color: #a4d8c9;
+
+            margin-top: 15px;
+
+            .searchInput {
+                width: 900px;
+                height: 50px;
+                padding-left: 10px;
+                font-size: 1rem;
+                border-radius: 10px;
+                border: 1px solid #d0cdcd;
+                margin-left: 270px;
+                margin-top: 13px;
+                margin-bottom: 300px;
+                padding-left: 380px;
+                background-color: #E2F5ED;
+            }
+        }
+
+        .buttons {
+            margin-left: 900px;
+            @include flexRow;
+            gap: 40px;
+            margin-top: 20px;
+
+            .Transport {
+                @include buttun1;
+                padding: 10px 80px 10px 80px;
+                border-radius: 5px;
+                font-size: 1rem;
+                font-weight: 600
+            }
+
+            .Transport:hover {
+                @include hover;
+            }
+
+            .Delivery {
+                @include button2;
+                padding: 10px 80px 10px 80px;
+                border-radius: 5px;
+                font-size: 1rem;
+                font-weight: 600
+            }
+
+            .Delivery:hover {
+                @include hoverWhite;
+            }
+
+        }
+    }
+
+
+}

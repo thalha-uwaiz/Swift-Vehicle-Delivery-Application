@@ -1,0 +1,96 @@
+@import '../../Styles/Global.scss';
+@import '../../Styles/mixin.scss';
+
+.CompleteYourProfile {
+    @include flexRow(left, left, 0);
+
+    .Left {
+        .ScreenPic {
+            width: 833px;
+            position: relative;
+            max-height: 100%;
+            overflow: hidden;
+            flex-shrink: 0;
+            object-fit: cover;
+            max-width: 100%;
+        }
+
+    }
+
+    .Right {
+
+        @include flexCol();
+        padding-left: 110px;
+
+        .ProfilePic {
+            width: 100px;
+            margin-bottom: 30px
+        }
+
+        .Inputfield {
+            @include flexCol(center, space-around, 20);
+
+            .Name {
+                @include input;
+            }
+
+            .Email {
+                @include input;
+            }
+
+            .phoneNumber {
+                @include input;
+
+
+            }
+
+            .Street {
+                @include input;
+            }
+
+            .City {
+                @include input;
+            }
+
+            .District {
+                @include input;
+                color: #7d7a7a;
+            }
+
+
+
+
+        }
+
+        .buttons {
+            @include flexRow();
+            margin-top: 25px;
+
+            .Cancel {
+                @include button2;
+                padding: 12px 60px 12px 60px;
+                margin-right: 60px
+            }
+
+            .Cancel:hover {
+                @include hoverWhite;
+            }
+
+            .Save {
+                @include buttun1;
+                padding: 12px 65px 12px 65px;
+            }
+
+            .Save:hover {
+                @include hover;
+            }
+        }
+
+        .footer {
+            margin-top: 60px;
+            color: #7d7a7a;
+            font-family: sans-serif;
+            font-style: italic;
+        }
+    }
+}

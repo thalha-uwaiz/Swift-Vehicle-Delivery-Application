@@ -1,0 +1,97 @@
+@import '../../Styles/Global.scss';
+@import '../../Styles/mixin.scss';
+
+.SignInWithEmail {
+    @include flexRow(left, left, 0);
+
+    .Left {
+        .ScreenPic {
+            width: 833px;
+            position: relative;
+            max-height: 100%;
+            overflow: hidden;
+            flex-shrink: 0;
+            object-fit: cover;
+            max-width: 100%;
+        }
+
+    }
+
+    .Right {
+
+        @include flexCol();
+        padding-left: 110px;
+
+
+        .Logo {
+            width: 170px;
+        }
+
+        .InputField{
+            @include flexCol;
+            .EmailOrPhone{
+                @include input;
+                margin-bottom: 40px
+            }
+            .Password{
+                @include input;
+            }
+        }
+
+        .SignIn{
+            @include buttun1;
+            margin-top: 40px;
+            padding: 15px 170px 15px 170px;
+        }
+        .SignIn:hover{
+            @include hover;
+        }
+
+        .forgotPassword{
+            border: none;
+            background: none;
+            color: red;
+            cursor: pointer;
+            margin-top: 7px;
+            margin-left: 260px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .forgotPassword:hover{
+            color: rgb(227, 90, 90);
+        }
+
+        .DontHaveAnAcc {
+            margin-top: 40px;
+            color: #5A5A5A;
+            font-family: sans-serif;
+            font-size: 18px;
+
+            .SignUpBtn {
+                background: transparent;
+                border: none;
+                color: $primaryColor;
+                font-size: 18px;
+                cursor: pointer;
+
+            }
+
+            .SignUpBtn:hover {
+                color: rgb(136, 180, 136);
+            }
+        }
+        
+
+        .footer {
+            margin-top: 200px;
+            color: #7d7a7a;
+            font-family: sans-serif;
+            font-style: italic;
+        }
+
+    }
+
+
+
+}

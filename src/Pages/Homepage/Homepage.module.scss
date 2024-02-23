@@ -1,0 +1,72 @@
+@import '../../Styles/Global.scss';
+@import '../../Styles/mixin.scss';
+
+.headerframe {
+    
+    .contentFrame {
+        margin-bottom: 50px;
+        @include flexRow (center, space-between, 20);
+        .content {
+            @include flexCol();
+            padding-left: 120px;
+            
+            .text{
+                font-size: 70px;
+                color: #036472;
+                font-family: 'aladin';
+            }
+        }
+
+    }
+
+    .bottom{
+        background-color: #E0ECE2;
+        @include flexRow();
+        gap: 200px;
+        .vision1{
+            .Icon1{
+                margin: 20px 0 20px 100px;
+               
+            }
+            .vision1Text{
+                text-align: center;
+                margin-bottom: 45px;
+                font-size: 20px;
+                margin-left: 25px;
+                font-style: italic;
+                font-family: sans-serif;
+               
+            }    
+        }
+
+        .vision2{
+            .Icon2{
+            margin: 20px 0 20px 80px;
+               
+            }
+            .vision2Text{
+                margin-bottom: 45px;
+                text-align: center;
+                font-size: 20px;
+                font-style: italic;
+                font-family: sans-serif;
+            }    
+        }
+
+        .vision3{
+            .Icon3{
+                margin: 20px 0 20px 90px;
+               
+            }
+            .vision3Text{
+                text-align: center;
+                margin-bottom: 45px;
+                font-size: 20px;
+                margin-right: 25px;
+                font-style: italic;
+                font-family: sans-serif;
+            }    
+        }
+
+    }
+}

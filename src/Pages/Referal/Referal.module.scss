@@ -1,0 +1,36 @@
+@import '../../Styles/Global.scss';
+@import '../../Styles/mixin.scss';
+
+.ReferalContainer{
+.BodyContainer{
+     @include flexRow(flex-start, flex-start 50);
+     .right{
+        font-family: sans-serif;
+        margin-left: 100px;
+        margin-top: 70px;
+        font-size: 1.7rem;
+        color: #5A5A5A;
+
+        .textBox{
+          margin-top:30px ;
+          @include input;
+          width: 700px;
+        }
+
+        .invite{
+            margin-top: 30px;
+            @include buttun1;
+            font-weight: bold;
+            padding: 15px 150px 15px 150px;
+            font-size: 1.2rem;
+        }
+        .invite:hover{
+            @include hover;
+        }
+
+
+    }
+
+
+}
+}

@@ -1,0 +1,89 @@
+@import '../../Styles/Global.scss';
+@import '../../Styles/mixin.scss';
+
+.Header{
+    font-family: sans-serif;
+    @include flexRow();
+    background-color: $primaryColor;
+    .sectionOne{
+        .Logo{
+            @include flexCol(flex-start, center, 10);
+            width: 170px;
+            
+        }
+    }
+
+    .sectionTwo{
+        cursor: pointer;
+        .navigation{
+            font-weight: 800;
+            margin-left: 280px;
+            color: white;
+            @include flexRow;
+            gap: 40px     
+        }
+        .home:hover{
+            color: rgb(190, 249, 216);
+        }
+        .aboutUs:hover{
+            color: rgb(190, 249, 216);
+        }
+        .favourite:hover{
+            color: rgb(190, 249, 216);
+        }
+        .aboutUs:hover{
+            color: rgb(190, 249, 216);
+        }
+        .dashboard:hover{
+            color: rgb(190, 249, 216);
+        }
+        .help:hover{
+            color: rgb(190, 249, 216);
+        }
+
+
+
+    }
+
+    .sectionThree{
+        margin-left: 230px;
+        .logOut{
+            background-color: #034972;
+            border: none;
+            padding: 10px 25px 10px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: white;
+        }
+        .logOut:hover{
+            background-color: rgb(11, 115, 200);
+           
+        }
+    }
+
+    .sectionFour{
+        @include flexRow(center, center, 0);
+        margin-left: 30px;
+       
+        .ProfilePic{
+            width: 50px;
+            
+        }
+        .profileName{
+            gap: 30px;
+            color: white;
+            margin-left: 15px;
+            
+
+        }
+        .Profileicon{
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+
+    }
+}

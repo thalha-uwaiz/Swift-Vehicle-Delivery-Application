@@ -1,0 +1,39 @@
+@import '../../Styles/Global.scss';
+@import '../../Styles/mixin.scss';
+
+.offerContainer{
+    @include flexRow (center, space-around, 0);
+    border: 1px solid #08B783;
+    margin: 20px 300px 30px 300px;
+    border-radius: 20px;
+
+    .offerdetails{
+        font-family: sans-serif;
+        padding: 10px;
+        .offerPercentage{
+            color: #F57F17;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .offerName{
+            padding-top: 5px;
+            font-size: 17px;
+            color: #B8B8B8;
+            font-style: italic;
+        }
+    }
+
+
+
+    .collectBtnContainer{
+        .collectBtn{
+            justify-content: flex-end;
+            @include buttun1() ;
+            padding: 10px 80px 10px 80px;
+        }
+        .collectBtn:hover{
+            @include hover;
+        }
+        
+    }
+}

@@ -1,0 +1,88 @@
+@import '../../Styles/Global.scss';
+@import '../../Styles/mixin.scss';
+
+
+.EnableLocation {
+    @include flexCol();
+
+
+    .Framecontainer {
+        @include flexCol();
+        margin-top: 130px;
+        width: 380px;
+        height: 450px;
+        border-radius: 20px;
+        background-color: rgb(254, 250, 250);
+        padding: var(--padding-13xl) var(--padding-29xl) var(--padding-57xl) var(--padding-26xl);
+        box-sizing: border-box;
+        gap: var(--gap-46xl);
+        z-index: 1;
+        text-align: center;
+        font-size: var(--font-size-21xl);
+        color: var(--text-color-contentsecondary);
+        font-family: var(--font-poppins);
+
+
+        .Heading {
+            font-family: sans-serif;
+            margin-top: 25px;
+            font-size: 1.5rem;
+        }
+
+        .ChooseYourLocation {
+            margin-top: 10px;
+            font-family: sans-serif;
+            color: #A0A0A0;
+            font-size: 1rem;
+        }
+
+        .Buttons {
+            @include flexCol();
+            gap: 30px;
+
+            .UseMyLocation {
+                margin-top: 20px;
+                background-color: $primaryColor;
+                border: none;
+                padding: 15px 100px 15px 100px;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 1rem;
+                font-weight: 500;
+                color: white;
+            }
+
+            .SkipForNow {
+                margin-top: 0;
+                background: none;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 1rem;
+                color: black;
+            }
+
+            .UseMyLocation:hover {
+             @include hover;
+            }
+
+            .SkipForNow:hover {
+                color: #a79f9f;
+            }
+        }
+    }
+
+
+    .Background {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        margin: 0 !important;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        max-height: 100%;
+
+    }
+
+}

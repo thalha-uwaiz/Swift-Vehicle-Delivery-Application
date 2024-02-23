@@ -1,0 +1,96 @@
+@import '../../Styles/Global.scss';
+@import '../../Styles/mixin.scss';
+
+@mixin sideNavItem {
+    @include flexRow(center, flex-start, 20);
+    padding: 10px 20px 10px 25px;
+    background-color: #E8F5E9;  
+    height: 95px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+@mixin sideHover{
+    background-color: #a4c7a7
+}
+
+
+.sideBarContainer {
+    width: 250px;
+    height: 900px;
+    .profileContainer {
+        @include sideNavItem();
+        .profileIcon{
+            width: 25px;
+        }
+    }
+
+    .profileContainer:hover{
+        @include sideHover();
+    }
+
+    .walletContainer {
+        @include sideNavItem();
+        .walletIcon{
+            width: 25px;
+        }
+    }
+    .walletContainer:hover{
+        @include sideHover();
+    }
+
+    .historyContainer {
+        @include sideNavItem();
+        .historyIcon{
+            width: 25px;
+        }
+    }
+    .historyContainer:hover{
+        @include sideHover();
+    }
+
+    .complainContainer {
+        @include sideNavItem();
+        .complainIcon{
+            width: 25px;
+        }
+    }
+    .complainContainer:hover{
+        @include sideHover();
+    }
+
+    .notificationContainer {
+        @include sideNavItem();
+        .notificationIcon{
+            width: 25px;
+        }
+    }
+    .notificationContainer:hover{
+        @include sideHover();
+    }
+
+    .referalContainer {
+        @include sideNavItem();
+        .referalIcon{
+            width: 25px;
+        }
+    }
+    .referalContainer:hover{
+        @include sideHover();
+    }
+
+    .settingsContainer {
+        @include sideNavItem();
+     
+       
+        .settingsIcon{
+            width: 25px;
+        }
+    }
+    .settingsContainer:hover{
+        @include sideHover();
+      
+    }
+
+}
